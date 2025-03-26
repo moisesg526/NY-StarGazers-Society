@@ -1,3 +1,11 @@
+let picOfDay = document.querySelector(".pic-Of-Day");
+picOfDay.addEventListener("click", picOfTheDay);
+
+function picOfTheDay() {
+
+  fetchData();
+  console.log("button is clicked");
+}
 async function fetchData() {
   try {
     const response = await fetch(
@@ -15,5 +23,3 @@ async function fetchData() {
     console.error("There was a problem fetching the data:", error);
   }
 }
-
-fetchData();
