@@ -18,10 +18,10 @@ h2 {
   padding-top: 2rem;
 }
 
-button {
+.btn {
   color: #fff;
   border: none;
-  padding: 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   background-color: #8252c1;
   cursor: pointer;
@@ -47,15 +47,43 @@ form {
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  align-items: center;
 }
+
 
 input {
   background-color: #e2d7f0;
   border: none;
   padding: 0.75rem 1rem;
-  width: fit-content;
   border-radius: 10px;
+  margin: auto;
   cursor: text;
+}
+
+h2,
+p {
+  margin-top: 4rem;
+  color: #8252c1;
+  background-color: rgba(226, 215, 240, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+p {
+  width: 50ch;
+  font-size: 1.2rem;
+}
+
+.api-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+img {
+  max-width: 40rem;
 }
 
 @media screen and (max-width: 600px) {
