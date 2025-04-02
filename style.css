@@ -35,18 +35,12 @@ h2 {
   gap: 2rem;
 }
 
-.form-sec {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-}
-
 .forms {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem 0;
   gap: 2rem;
 }
 
@@ -68,13 +62,17 @@ input {
   margin: auto;
   cursor: text;
 }
+h2 {
+  max-width: 20rem;
+  margin: auto;
+}
 
 h2,
 p {
   margin-top: 4rem;
   color: #8252c1;
   background-color: rgba(226, 215, 240, 0.9);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
 }
 
@@ -84,9 +82,10 @@ p {
 }
 
 .api-content {
+  padding: 2rem 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -97,5 +96,19 @@ img {
 @media screen and (max-width: 600px) {
   body {
     background-size: cover;
+  }
+  .api-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  img {
+    max-width: 20rem;
+  }
+
+  p {
+    width: 30ch;
+    margin: 0;
   }
 }
